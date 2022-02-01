@@ -1,0 +1,49 @@
+<html>
+    <head>
+        <title>
+            COUNTER
+        </title>
+        <script>
+         x=0;   
+         function inc()
+         {
+             x++;
+             document.getElementById("change").innerHTML=x;
+         }   
+         function dec()
+         {
+             x--;
+             document.getElementById("change").innerHTML=x;
+         }  
+        </script>
+        <style>
+        #but:hover
+        {
+        background-color:black;
+        color: black;
+        border-radius: 30px 0 30px 0;
+        }
+            }
+        </style>
+    </head>
+    <body background="pic/background.jpg">
+        <table align="center" border="15" width="500" height="600" bgcolor="	#A9A9A9">
+          <tr>
+              <td height="100">
+                  <h1 align="center">COUNTER</h1> 
+              </td>
+          </tr>
+          <tr>
+            <td align="center" height="170">
+                 <button id="but"  onclick="inc()" style="height:70 ; background-color: #D3D3D3; width: 200;" ><h2>INCREMENT</h2></button>
+                 <button id="but" onclick="dec()" style="height:70 ; background-color: #D3D3D3; width: 200;"><h2>DECREMENT</h2></button>
+                </td>
+        </tr>
+        <tr>
+            <td align="center">
+                <font  id="change" style="font-size: 200;" >0</font>
+            </td>
+        </tr>
+        </table>
+    </body>
+</html>
